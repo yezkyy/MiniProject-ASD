@@ -309,6 +309,39 @@ def generate_id_pesanan():
 
 distributor = DistribusiBarang()
 
+# Data pesanan
+pesanan = [
+    {
+        "id_pesanan": "ORD-453891",
+        "nama_barang": "RAM 8GB",
+        "model_seri": "Kingston HyperX FURY",
+        "nama_costumer": "Budi Santoso",
+        "alamat": "Jl. Samanhudi No 45, Samarinda",
+        "kuantitas": 20
+    },
+    {
+        "id_pesanan": "ORD-622437",
+        "nama_barang": "Hardisk 2TB",
+        "model_seri": "Transcend StoreJet 25C3S",
+        "nama_costumer": "PT.Hosting Ficer",
+        "alamat": "Jl. Sudirman No. 23, Bandung",
+        "kuantitas": 40
+    },
+    {
+        "id_pesanan": "ORD-905331",
+        "nama_barang": "Mikrotik Indoor",
+        "model_seri": "RB1100AHx4",
+        "nama_costumer": "Toko Lizi Network",
+        "alamat": "Jl. Diponegoro No. 34, Semarang",
+        "kuantitas": 24
+    }
+]
+
+# Menambahkan pesanan ke dalam struktur data
+for data_pesanan in pesanan:
+    distributor.tambah_diakhir(data_pesanan)
+
+# Memulai menu
 while True:
     os.system ('cls')
     print("═════════════════════════════")
